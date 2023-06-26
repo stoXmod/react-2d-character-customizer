@@ -1,6 +1,6 @@
 import React from "react";
 import { ConfigPart } from "../interfaces/Config";
-
+import classNames from 'classnames';
 import classes from "./PartList.module.scss";
 import configUtils from "../utils/configUtils";
 
@@ -15,6 +15,8 @@ interface PartListProps {
 
 export const PartList = (props: PartListProps) => {
   const { filter, reduce } = configUtils;
+
+  const urlPrefix = process.env.NEXT_PUBLIC_PUBLIC_URL + "/character_parts";
 
   return (
     <div>
@@ -40,7 +42,13 @@ export const PartList = (props: PartListProps) => {
                 }
               }}
             >
-              {index + 1}
+              <img
+                  src={urlPrefix + "/" + part.images[0
+                      ].filename + ".png"}
+                  alt={part.name}
+                  className={classNames([
+                    classes[part.name.split(' ')[0]], classes.characterPartImage], part.name.split(' ')[0])}
+              />
             </div>
           ))}
       </div>

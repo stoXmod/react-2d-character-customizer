@@ -4512,7 +4512,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "eyebrows8",
+    name: "Eyebrows 8",
     partTypeId: 14,
     colorId: 13,
     images: [
@@ -4523,7 +4523,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "eyebrows8",
+    name: "Eyebrows 8",
     partTypeId: 14,
     colorId: 14,
     images: [
@@ -4534,7 +4534,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "eyebrows8",
+    name: "Eyebrows 8",
     partTypeId: 14,
     colorId: 15,
     images: [
@@ -22898,7 +22898,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Turtleneck 1",
+    name: "Inner 1",
     bodyShapeId: 1,
     partTypeId: 2,
     colorId: 5,
@@ -22910,7 +22910,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Turtleneck 1",
+    name: "Inner 1",
     bodyShapeId: 1,
     partTypeId: 2,
     colorId: 6,
@@ -22922,7 +22922,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Turtleneck 1",
+    name: "Inner 1",
     bodyShapeId: 1,
     partTypeId: 2,
     colorId: 7,
@@ -22934,7 +22934,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Turtleneck 1",
+    name: "Inner 1",
     bodyShapeId: 1,
     partTypeId: 2,
     colorId: 8,
@@ -22946,7 +22946,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Turtleneck 1",
+    name: "Inner 1",
     bodyShapeId: 1,
     partTypeId: 2,
     colorId: 9,
@@ -22958,7 +22958,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Turtleneck 1",
+    name: "Inner 1",
     bodyShapeId: 1,
     partTypeId: 2,
     colorId: 10,
@@ -22970,7 +22970,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Turtleneck 1",
+    name: "Inner 1",
     bodyShapeId: 1,
     partTypeId: 2,
     colorId: 11,
@@ -22982,7 +22982,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Turtleneck 1",
+    name: "Inner 1",
     bodyShapeId: 1,
     partTypeId: 2,
     colorId: 12,
@@ -22994,7 +22994,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Cardigan 1",
+    name: "Shirt 1",
     bodyShapeId: 1,
     partTypeId: 3,
     colorId: 5,
@@ -23018,7 +23018,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Cardigan 1",
+    name: "Shirt 1",
     bodyShapeId: 1,
     partTypeId: 3,
     colorId: 6,
@@ -23042,7 +23042,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Cardigan 1",
+    name: "Shirt 1",
     bodyShapeId: 1,
     partTypeId: 3,
     colorId: 7,
@@ -23066,7 +23066,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Cardigan 1",
+    name: "Shirt 1",
     bodyShapeId: 1,
     partTypeId: 3,
     colorId: 8,
@@ -23090,7 +23090,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Cardigan 1",
+    name: "Shirt 1",
     bodyShapeId: 1,
     partTypeId: 3,
     colorId: 9,
@@ -23114,7 +23114,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Cardigan 1",
+    name: "Shirt 1",
     bodyShapeId: 1,
     partTypeId: 3,
     colorId: 10,
@@ -23138,7 +23138,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Cardigan 1",
+    name: "Shirt 1",
     bodyShapeId: 1,
     partTypeId: 3,
     colorId: 11,
@@ -23162,7 +23162,7 @@ const configParts: ConfigPart[] = [
     ]
   },
   {
-    name: "Cardigan 1",
+    name: "Shirt 1",
     bodyShapeId: 1,
     partTypeId: 3,
     colorId: 12,

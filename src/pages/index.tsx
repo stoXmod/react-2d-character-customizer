@@ -211,9 +211,8 @@ function Home() {
 
   return (
       <div className="flex justify-between" style={{width: '100vw', height: '100vh'}}>
-        <div style={{width: '40%', height: '100vh', overflow: 'hidden auto',  background: 'linear-gradient(45deg, #282c34, #3c3b3f, #0d47a1)'}} className={'flex items-center content-center'}>
-          <div style={{width: '100%'}} className={'p-5'}>
-            <div style={{height: '100px'}}></div>
+        <div style={{width: '40%', height: '100vh', overflow: 'hidden',  background: 'linear-gradient(45deg, #282c34, #3c3b3f, #0d47a1)'}} className={'flex items-center content-center'}>
+          <div style={{width: '100%', height: '100vh', overflow: 'hidden auto'}} className={'p-5'}>
             <div className="max-w-md py-5 mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4">
               <div className="w-full max-w-md mx-auto">
                 <Selector
@@ -232,6 +231,7 @@ function Home() {
         </div>
         </div>
         <div style={{width: '60%'}}>
+          <div className='absolute top-5 right-8 cursor-pointer z-10' onClick={refresh}>Reset</div>
           <Character partsArray={partInfoArray} changing={changing}></Character>
       </div>
       </div>

@@ -4,7 +4,7 @@ import classnames from "classnames";
 import PartLayer from "../components/PartLayer";
 
 import classes from "./Character.module.scss";
-import { ConfigImage, ConfigPart } from "../interfaces/Config";
+import { ConfigImage, ConfigPart } from "@/interfaces/Config";
 
 interface CharacterProps {
   partsArray: ConfigPart[];

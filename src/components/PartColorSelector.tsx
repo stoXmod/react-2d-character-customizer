@@ -27,7 +27,6 @@ export const PartColorSelector = (props: PartColorSelectorProps) => {
         .filter(part => part.partTypeId === props.partType)
         .map((part: ConfigPart, index: number) => (
           <div className={classes.PartColorSelectorPart} key={index}>
-            <div className={classes.partName}>{part.name}</div>
             <div className={classes.PartColorSelectorColors}>
               {props.parts
                 .filter(

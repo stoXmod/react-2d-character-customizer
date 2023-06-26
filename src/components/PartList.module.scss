@@ -6,7 +6,7 @@
 }
 
 .partItem {
-  border: 2px solid #eaeaea;
+  border: 5px solid #eaeaea;
   cursor: pointer;
   width: 100px;
   height: 100px;
@@ -15,19 +15,154 @@
   position: relative;
   line-height: 40px;
   margin: 2px;
+  z-index: 999;
+  overflow: hidden;
 }
 
 .partItemSelected {
   @extend .partItem;
+  border: 5px solid #c9c7c7 !important;
+}
 
-  &:before {
-    border: 5px solid #bfbcbc;
-    content: "";
-    border-radius: 20%;
+.characterPartImage {
+   &.Body {
+     position: absolute;
+     top: -13px;
+     width: 70px;
+        left: 13px;
+   }
+  &.Face {
     position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-  }
+    top: 79px;
+    left: 10px;
+    transform: scale(2);
+   }
+  &.Eyes {
+    position: absolute;
+    top: 292px;
+    left: 40px;
+    width: 150px;
+    transform: scale(6);
+    z-index: -9;
+   }
+  &.Eyebrows {
+    position: absolute;
+    top: 304px;
+    left: 42px;
+    width: 150px;
+    transform: scale(6);
+    z-index: -9;
+   }
+  &.Shoes {
+    position: absolute;
+    top: -86px;
+    left: 10px;
+    width: 150px;
+    transform: scale(1.5);
+    z-index: -9;
+   }
+  &.Glasses {
+    position: absolute;
+    top: 293px;
+    left: 38px;
+    width: 150px;
+    transform: scale(6);
+    z-index: -9;
+   }
+  &.Nose {
+    position: absolute;
+    top: 285px;
+    left: 42px;
+    width: 150px;
+    transform: scale(6);
+    z-index: -9;
+   }
+  &.Lips {
+    position: absolute;
+    top: 260px;
+    left: 42px;
+    width: 150px;
+    transform: scale(6);
+    z-index: -9;
+   }
+  &.Hair {
+    position: absolute;
+    top: 80px;
+    left: 8px;
+    width: 150px;
+    transform: scale(2);
+    z-index: -9;
+   }
+  &.Back {
+    position: absolute;
+    top: 80px;
+    left: 8px;
+    width: 150px;
+    transform: scale(2);
+    z-index: -9;
+   }
+  &.Inner {
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    width: 150px;
+    transform: scale(2);
+    z-index: -9;
+   }
+  &.Shirt {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 150px;
+    transform: scale(1.5);
+    z-index: -9;
+   }
+  &.Hoodie, &.Plumas {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 150px;
+    transform: scale(1.5);
+    z-index: -9;
+   }
+  &.Jeans, &.Washed, &.Kneepads, &.Runner, &.Chainlegs {
+    position: absolute;
+    top: -53px;
+    left: 5px;
+    width: 150px;
+    transform: scale(1.5);
+    z-index: -9;
+   }
+  &.Suspenders{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 150px;
+    transform: scale(1.5);
+    z-index: -9;
+   }
+  &.Facial {
+    position: absolute;
+    top: 127px;
+    left: 18px;
+    width: 150px;
+    transform: scale(3);
+    z-index: -9;
+   }
+  &.Marks {
+    position: absolute;
+    top: 285px;
+    left: 40px;
+    width: 150px;
+    transform: scale(6);
+    z-index: -9;
+   }
+  &.Piercings {
+    position: absolute;
+    top:280px;
+    left: 0;
+    width: 150px;
+    transform: scale(6);
+    z-index: -9;
+   }
 }

@@ -1,5 +1,7 @@
 .PartColorSelector {
   overflow: auto;
+  position: relative;
+  z-index: 999;
 }
 
 .PartColorSelectorPart {

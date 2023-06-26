@@ -58,19 +58,19 @@ const configPartTypes: ConfigPartType[] = [
   },
   {
     id: 2,
-    name: "Inner layer",
+    name: "Skinny / Tank Tops / Vests / Turtleneck",
     boundToBodyShape: true,
     iconFilename: "icon_innerlayer"
   },
   {
     id: 3,
-    name: "Second Layer",
+    name: "Shirts / T-shirts",
     boundToBodyShape: true,
     iconFilename: "icon_secondlayer"
   },
   {
     id: 4,
-    name: "Third Layer",
+    name: "Jackets / Hoodies",
     boundToBodyShape: true,
     iconFilename: "icon_thirdlayer"
   },
