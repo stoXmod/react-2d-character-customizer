@@ -109,9 +109,9 @@
     transform: scale(2);
     z-index: -9;
    }
-  &.Shirt {
+  &.Shirt, &.Turtleneck {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 5px;
     width: 150px;
     transform: scale(1.5);
