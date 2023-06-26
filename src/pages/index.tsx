@@ -171,7 +171,7 @@ function Home() {
     const container = document.querySelector("#character");
     const image = document.querySelector(".characterLayer");
     if (container !== null && image !== null) {
-      const xOffset = container.clientWidth - image.clientWidth;
+      const xOffset = (container.clientWidth - image.clientWidth) / 2;
       const yOffset = container.clientHeight - image.clientHeight;
 
       html2canvas(container as any, {
@@ -231,6 +231,7 @@ function Home() {
         </div>
         </div>
         <div style={{width: '60%'}}>
+          <div className='absolute top-5 right-[6rem] cursor-pointer z-10' onClick={save}>Save</div>
           <div className='absolute top-5 right-8 cursor-pointer z-10' onClick={refresh}>Reset</div>
           <Character partsArray={partInfoArray} changing={changing}></Character>
       </div>
