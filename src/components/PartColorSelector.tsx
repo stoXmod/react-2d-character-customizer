@@ -7,7 +7,7 @@ interface PartColorSelectorProps {
   parts: ConfigPart[];
   addPart: (newPart: ConfigPart) => void;
   partType: number;
-  skinTone: number;
+  skinTone?: number;
   partsArray: ConfigPart[];
   setSkinTone: (newSkinTone: number) => void;
 }

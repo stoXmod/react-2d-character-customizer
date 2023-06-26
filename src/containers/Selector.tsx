@@ -12,7 +12,7 @@ interface SelectorProps {
   addPart: (newPart: ConfigPart) => void;
   removePart: (removedPart: ConfigPart) => void;
   changeSkinTone: (newSkinTone: number) => void;
-  skinTone: number;
+  skinTone?: number;
   partsArray: ConfigPart[];
   randomize: () => void;
   save: () => void;

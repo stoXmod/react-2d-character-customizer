@@ -9,7 +9,7 @@ interface PartListProps {
   addPart: (newPart: ConfigPart) => void;
   removePart: (removedPart: ConfigPart) => void;
   partType: number;
-  skinTone: number;
+  skinTone?: number;
   partsArray: ConfigPart[];
 }
 
@@ -21,7 +21,7 @@ export const PartList = (props: PartListProps) => {
       <div className={classes.partList}>
         {props.parts
           .filter(part => filter.byPartType(part, props.partType))
-          .filter(part => filter.bySkinTone(part, props.skinTone))
+          .filter(part => filter.bySkinTone(part, props.skinTone ?? 0))
           .filter(part => filter.byBodyShape(part, props.partsArray))
           .reduce(reduce.byPartName, [])
           .map((part, index) => (

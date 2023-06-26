@@ -14,7 +14,7 @@ function Home() {
   const [partInfoArray, setPartInfoArray] = React.useState<ConfigPart[]>(
       configUtils.part.getDefaultSelection(firstSkinToneId)
   );
-  const [skinTone, setSkinTone] = React.useState<number>(firstSkinToneId);
+  const [skinTone, setSkinTone] = React.useState<number | undefined>(firstSkinToneId);
   const [changing, setChanging] = React.useState<boolean>(false);
 
   React.useEffect(() => {
@@ -130,28 +130,30 @@ function Home() {
     cleanUrl();
     const randomSelection: ConfigPart[] = [];
 
-    const randomSkinTone: ConfigColor = _.sample(
+    const randomSkinTone: ConfigColor | undefined = _.sample(
         config.colors.filter(color => color.isSkinTone)
     );
 
-    const randomBodyShape: ConfigPart = _.sample(
+    const randomBodyShape: ConfigPart | undefined = _.sample(
         config.parts
             .filter(part => configUtils.part.isBodyPart(part))
-            .filter(part => part.colorId === randomSkinTone.id)
+            .filter(part => part.colorId === randomSkinTone?.id)
     );
+
+    if (randomBodyShape !== undefined)
     randomSelection.push({ ...randomBodyShape });
 
     config.partTypes.forEach(partType => {
-      const randomPart: ConfigPart = _.sample(
+      const randomPart: ConfigPart | undefined = _.sample(
           config.parts
               .filter(part => !configUtils.part.isBodyPart(part))
               .filter(part => part.partTypeId === partType.id)
               .filter(part =>
-                  partType.useSkinTone ? part.colorId === randomSkinTone.id : true
+                  partType.useSkinTone ? part.colorId === randomSkinTone?.id : true
               )
               .filter(part =>
                   partType.boundToBodyShape
-                      ? part.bodyShapeId === randomBodyShape.bodyShapeId
+                      ? part.bodyShapeId === randomBodyShape?.bodyShapeId
                       : true
               )
       );
@@ -159,7 +161,7 @@ function Home() {
       if (randomPart) randomSelection.push({ ...randomPart });
     });
 
-    setSkinTone(randomSkinTone.id);
+    setSkinTone(randomSkinTone?.id);
     setChanging(true);
     setTimeout(() => setChanging(false), 500);
     setPartInfoArray([...randomSelection]);
