@@ -1,0 +1,66 @@
+.PartColorSelector {
+  overflow: auto;
+}
+
+.PartColorSelectorPart {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.PartColorSelectorColors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partName {
+  padding: 15px;
+  border-radius: 25px;
+  background: #eaeaea;
+  margin-right: 15px;
+}
+
+.color {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.colorSelected {
+  @extend .colorMultiple;
+
+  &:before {
+    content: "";
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+  }
+}
+
+.colorMultiple {
+  @extend .color;
+
+  cursor: pointer;
+  display: grid;
+  grid-auto-flow: column;
+
+  & > div:first-child {
+    border-radius: 50px 0 0 50px;
+  }
+
+  & > div:last-child {
+    border-radius: 0 50px 50px 0;
+  }
+}
+
+.colorMultipleSelected {
+  @extend .colorSelected;
+}
